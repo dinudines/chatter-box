@@ -1,0 +1,77 @@
+.app {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.name-form {
+    margin-top: 10rem;
+}
+
+.chat-box {
+    display: none;
+    height: 80vh;
+    margin-top: 2rem;
+    border: 1px solid gray;
+}
+
+#friends-area {
+    text-align: center;
+    padding: 0;
+}
+
+#chat-area {
+    text-align: center;
+    border-left: 1px solid gray;
+    height: 79.9vh;
+}
+
+#chat-boxes {
+    height: 70vh;
+    overflow: auto;
+}
+
+#chat-form {
+    bottom: 10vh;
+    position: fixed;
+    width: 45%;
+}
+
+.friend {
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: x-large
+}
+
+.my-message {
+    font-size: large;
+    background-color: #dce4ec;
+    margin-bottom: 5px;
+    border: 1px solid lightgray;
+    text-align: right;
+    padding: 0.5rem;
+}
+
+.received-message {
+    font-size: large;
+    background-color: #dcece3;
+    margin-bottom: 5px;
+    border: 1px solid lightgray;
+    text-align: left;
+    padding: 0.5rem;
+}
+
+.active {
+    background-color: #dcece3;
+}
+
+#logged-user {
+    text-align: right;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+  }

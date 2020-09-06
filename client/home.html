@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Chatter Box </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+  
+    <body>
+        <main>
+            <div class="container app">
+                <h2> Chatter Box </h2>
+                <form class="name-form">
+                    <div class="form-row">
+                        <div class="offset-md-3 col-md-6 mb-3">
+                            <label for="name">Please provide your name below </label>
+                            <input type="text" class="form-control" id="name" value="" required>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="submit"> Start Chatting </button>
+                </form>
+            </div>
+            <div id="chat" class="container chat-box">
+                <div class="row">
+                    <div id="friends-area" class="col-3">
+                        <div class="row">
+                            <div class="col-9" style="text-align: right;">
+                                <h5> Online Friends </h5>
+                            </div>
+                            <div class="col-3" style="text-align: left;top: 3px;">
+                                <div class="dot"> </div>
+                            </div>
+                        </div>
+                        <div id="friends-list"></div>
+                    </div>
+                    <div id="chat-area" class="col-9">
+                        <div class="row">
+                            <div class="col-8"></div>
+                            <div class="col-4">
+                                <h5 id="logged-user"> Logged In :  </h5> 
+                            </div>
+                        </div>
+                        <div id="chat-boxes"></div>
+                        <form id="chat-form">
+                            <div class="input-group">
+                                <input id="message" type="text" class="form-control" placeholder="Enter your message" required>
+                                <div class="input-group-append">
+                                  <button id="send-btn" class="btn btn-outline-secondary" type="submit">Send</button>
+                                </div>
+                              </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/socket.io.js"></script>
+        <script src="js/home.js"></script>
+    </body>
+</html>
