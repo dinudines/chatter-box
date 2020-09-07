@@ -53,6 +53,17 @@ $(function () {
         addNewMessage({ id, name, to, message});
     });
 
+    socket.on("removeChatBox", function (id) {
+        const chatBoxes = $("#chat-boxes").children();
+
+        $.each(chatBoxes, function (index, box) {
+            if (box["id"].includes(id)) {
+                box.remove();
+                return;
+            }
+        });
+    });
+
     const addUsers = (users) => {
         let active = true;
         $("#friends-list").empty();

@@ -26,6 +26,7 @@ io.on('connection', (socket) => {
     socket.on('disconnect', () => {
         const activeUsers = removeUser(socket.id);
         io.emit("activeUsers", activeUsers);
+        io.emit("removeChatBox", socket.id);
     });
 });
 
