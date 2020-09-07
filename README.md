@@ -8,3 +8,8 @@ A simple app used to send messages between users
 3) cd chatter-box
 4) npm install
 5) node app.js
+
+# Features 
+1) send one to one messages
+
+# Live at https://myy-chatter-box.herokuapp.com/
