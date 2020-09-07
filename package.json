@@ -4,6 +4,7 @@
   "description": "a simple app used to send messages between users",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dinesh",
